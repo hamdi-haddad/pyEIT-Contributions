@@ -18,7 +18,7 @@ def thorax(pts):
        [ True,  True]])
 
     '''
-    # Thorax contour points coordinates are taken from a thorax simulation based on EIDORS 
+    # Thorax contour points coordinates are taken from a thorax simulation based on a CT thorax image from EIDORS library 
     thrx = Polygon([(0.0487,0.6543),(0.1564,0.6571),(0.2636,0.6697),(0.3714,0.6755),
                 (0.479,0.6686),(0.5814,0.6353),(0.6757,0.5831),(0.7582,0.5137),
                 (0.8298,0.433),(0.8894,0.3431),(0.9347,0.2452) ,(0.9698,0.1431),

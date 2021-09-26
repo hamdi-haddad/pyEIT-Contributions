@@ -55,6 +55,14 @@ class DISTMESH:
             p = np.reshape(p, (-1, 2))  
 
 
+        # remove duplicated points of p and p_fix
+        # avoid overlapping of mesh points
+        #if (fd!=thorax):
+        if self.nfix > 0:
+                p = remove_duplicate_nodes(p, p_fix, self.geps)
+                p = np.vstack([p_fix, p])
+
+
         #....#
 
 
